@@ -24,7 +24,7 @@ def frame(path='E:/code/control_system/pic/test_zyx',save=False,number=1000,from
         keycode = recognizer.show_pic(frame)
         if keycode&0xff == ord('q'):
             break
-    recognizer.release()
+    recognizer.release(cap)
 
 if __name__ == '__main__':
     #if you want to save picture to a specific place
